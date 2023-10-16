@@ -1,0 +1,418 @@
+/* Références de police */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=Fraunces:opsz,wght@9..144,100;9..144,200;9..144,300;9..144,400;9..144,500;9..144,600;9..144,700;9..144,800;9..144,900&display=swap');
+
+
+/* Styles de base */
+*, a {
+    max-width: 1600px;
+    color: var(--black);
+    cursor: pointer;
+    font-family: 'Barlow', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+}
+
+/* Styles du haut de la page */
+header {
+    background-image: url("./images/mobile-icons/image-header.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    padding: 40px 25px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 28px;
+    width: 123px;
+}
+
+.nav-items {
+    list-style: none;
+    display: flex;
+}
+
+.nav-items li {
+    margin-right: 20px;
+}
+
+.menu-icon img {
+    height: 18px;
+    width: 24px;
+}
+
+.top-content {
+    text-align: center;
+    color: var(--white);
+    font-family: 'Fraunces', serif;
+    font-size: 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+    max-width: 191px;
+    margin: 0 auto;
+}
+
+.top-content img {
+    margin-top: 20px;
+}
+
+/* Styles des sections Transform et Stand Out */
+.transform,
+.stand-out {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.transform .text,
+.stand-out .text {
+    margin: 0 25px;
+}
+
+.transform .text h2,
+.stand-out .text h2 {
+    font-size: 30px;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    color: var(--bluishblack);
+    width: 100%;
+}
+
+.transform .text p,
+.stand-out .text p {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--lightgrey);
+    line-height: 25px;
+    margin-top: 30px;
+}
+
+.transform .text a,
+.stand-out .text a {
+    font-size: 18px;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    padding-top: 60px;
+    border-bottom: 5px solid var(--yellow);
+}
+
+.transform .image,
+.stand-out .image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 370px;
+}
+
+.transform .image {
+    background-image: url("./images/mobile-icons/image-transform.png");
+}
+
+.stand-out .image {
+    background-image: url("./images/mobile-icons/image-stand-out.png");
+}
+
+/* Styles de la section Two Images */
+.two-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.two-images .image-left,
+.two-images .image-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 30px;
+    width: 100%;
+}
+
+.two-images .image-left h2,
+.two-images .image-right h2 {
+    font-size: 30px;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    padding-top: 400px;
+    color: var(--darkgreen);
+}
+
+.two-images .image-left p,
+.two-images .image-right p {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 25px;
+    color: var(--applegreen);
+}
+
+.two-images .image-left {
+    background-image: url("./images/mobile-icons/image-graphic-design.png");
+}
+
+.two-images .image-right {
+    background-image: url("./images/mobile-icons/image-photography.png");
+}
+
+.two-images .image-right h2,
+.two-images .image-right p {
+    color: var(--darkblue);
+}
+
+/* Styles de la section Testimonial */
+.testimonial {
+    text-align: center;
+    padding: 70px 40px;
+}
+
+.testimonial h1 {
+    color: var(--lightgrey);
+    font-size: 16px;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.testimonial-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.testimonial-card {
+    text-align: center;
+    padding: 0 20px;
+    flex: 1;
+}
+
+.testimonial-card img {
+    border-radius: 50%;
+    height: 82px;
+    width: 82px;
+    margin: 0 auto;
+}
+
+.testimonial-card p {
+    color: var(--darkgrey);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.client-info {
+    margin-top: 20px;
+}
+
+.client-info p.name {
+    font-size: 16px;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+}
+
+.client-info p.designation {
+    color: var(--lightgrey);
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+/* Styles de la section Four Images */
+.four-images {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.four-images .image-one,
+.four-images .image-two,
+.four-images .image-three,
+.four-images .image-four {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 1;
+    height: 188px;
+}
+
+.four-images .image-one {
+    background-image: url("./images/mobile-icons/image-gallery-milkbottles.png");
+}
+
+.four-images .image-two {
+    background-image: url("./images/mobile-icons/image-gallery-orange.png");
+}
+
+.four-images .image-three {
+    background-image: url("./images/mobile-icons/image-gallery-cone.png");
+}
+
+.four-images .image-four {
+    background-image: url("./images/mobile-icons/image-gallery-sugar-cubes.png");
+}
+
+/* Styles du pied de page */
+footer {
+    text-align: center;
+    background-color: var(--lightgreen);
+    padding: 60px 30px;
+}
+
+.logo-footer img {
+    height: 25px;
+    width: 123px;
+}
+
+.services {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.services a {
+    color: var(--darkgreen);
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 20px;
+}
+
+.social-icons {
+    margin-top: 40px;
+}
+
+.social-icons img {
+    margin: 0 10px;
+}
+
+/* Styles Media Query pour les écrans larges */
+@media screen and (min-width: 1024px) {
+    header {
+        background-image: url("./images/desktop-icons/image-header.png");
+        height: 650px;
+        padding: 40px 50px;
+        align-items: center;
+    }
+
+    .nav-items {
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 50px;
+    }
+
+    .nav-items a {
+        color: var(--white);
+    }
+
+    .nav-items .contact {
+        background-color: var(--white);
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        height: 50px;
+        width: 140px;
+    }
+
+    .menu-icon img {
+        display: none;
+    }
+
+    .top-content {
+        max-width: 475px;
+        font-size: 45px;
+    }
+
+    .top-content img {
+        margin-top: 20px;
+    }
+
+    /* Styles de la section Transform & Standout */
+    .transform,
+    .stand-out {
+        flex-direction: row;
+        margin: 65px 80px;
+        text-align: left;
+    }
+
+    .transform .text,
+    .stand-out .text {
+        margin: 0;
+    }
+
+    .transform .text h2,
+    .stand-out .text h2 {
+        margin-left: 0;
+        width: 350px;
+    }
+
+    /* Styles de la section Two Images */
+    .two-images {
+        flex-direction: row;
+    }
+
+    .two-images .image-right p,
+    .two-images .image-left p {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .two-images .image-left {
+        background-image: url("./images/desktop-icons/image-graphic-design.png");
+    }
+
+    .two-images .image-right {
+        background-image: url("./images/desktop-icons/image-photography.png");
+    }
+
+    /* Styles de la section Testimonial */
+    .testimonial h1 {
+        padding-bottom: 30px;
+    }
+
+    .testimonial-cards {
+        flex-direction: row;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .testimonial-card {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    /* Styles de la section Four Images */
+    .four-images {
+        margin-top: 130px;
+    }
+
+    /* Styles du pied de page */
+    footer {
+        padding: 60px 0;
+    }
+
+    .social-icons {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (min-width: 1044px) {
+    .two-images .image-right p,
+    .two-images .image-left p {
+        padding-left: 180px;
+        padding-right: 180px;
+    }
+}
